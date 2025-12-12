@@ -25,4 +25,21 @@ router.post("/addNewStudent", (req, res)=>{
     res.send({massage : "Data Receved Successfully..."}) 
 })
 
+// GET Teacher Data
+router.get("/getTeacherData", (req, res)=>{
+    res.send({massage: "Teacher Data",
+        result: [
+            {
+                name: "Sanjay Panchdane",
+                age: 50
+            },
+            {
+                name: "Manisha Panchdane",
+                age: 45
+            }
+        ]
+    })
+})
+
+
 export default router;
