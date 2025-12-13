@@ -11,9 +11,6 @@ app.use(express.json());
 app.use('/student',routerStudent);
 app.use('/teacher',routerTeacher);
 
-
-
-
 app.listen(5050, ()=>{
     console.log("Server is Running...");
 })
